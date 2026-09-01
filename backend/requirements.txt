@@ -1,0 +1,9 @@
+Django==5.2.5
+djangorestframework==3.16.1
+django-cors-headers==4.7.0
+scikit-learn==1.7.1
+torch==2.8.0
+joblib==1.5.2
+transformers==4.56.2
+safetensors==0.6.2
+huggingface-hub==0.34.4

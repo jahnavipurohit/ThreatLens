@@ -1,0 +1,35 @@
+Return-Path: <payments@secure-payments-demo.test>
+Received: from relay.secure-payments-demo.test (relay.secure-payments-demo.test [198.51.100.42])
+    by mx.company-demo.test with ESMTP id DEMO12345
+    for <employee@company-demo.test>; Mon, 31 Aug 2026 11:42:10 +0530
+Authentication-Results: mx.company-demo.test;
+    spf=fail smtp.mailfrom=secure-payments-demo.test;
+    dkim=fail header.d=secure-payments-demo.test;
+    dmarc=fail header.from=company-demo.test
+From: Accounts Department <accounts@company-demo.test>
+Reply-To: Payment Support <payments@secure-payments-demo.test>
+To: Employee <employee@company-demo.test>
+Date: Mon, 31 Aug 2026 11:41:02 +0530
+Message-ID: <demo-threat-20260831@secure-payments-demo.test>
+Subject: URGENT: Outstanding invoice requires immediate payment
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Employee,
+
+This is a final warning. Your account will be suspended unless the outstanding
+invoice is paid immediately.
+
+Open the link below and verify your account password before making the wire
+transfer:
+
+https://secure-payments-demo.test/verify-account?invoice=INV-2026-8841
+
+Send the updated bank account details and one-time password to confirm payment.
+
+Regards,
+Accounts Department
+
+This is a synthetic hackathon test email. The domains and IP address are reserved
+for documentation and are not intended to contact a real service.
