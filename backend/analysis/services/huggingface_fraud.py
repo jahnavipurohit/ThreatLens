@@ -4,7 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 
 MODEL_ID = "cunxin/roberta-email-fraud-detector"
-DEFAULT_LOCAL_MODEL_PATH = Path(r"C:\Users\Jahnavi\Downloads\New folder")
+DEFAULT_LOCAL_MODEL_PATH = Path(__file__).resolve().parents[3] / "models_email"
 
 
 def _model_path():

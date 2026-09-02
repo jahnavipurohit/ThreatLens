@@ -31,7 +31,7 @@ npm run dev
 
 Open `http://localhost:5173`. The API runs at `http://localhost:8000`.
 
-The RoBERTa detector loads only from `C:\Users\Jahnavi\Downloads\New folder`.
+The RoBERTa detector loads from the repository's `models_email` directory.
 To use another local copy without changing code, set `HF_EMAIL_FRAUD_MODEL_PATH`
 to the directory containing `config.json`, `model.safetensors`, and tokenizer files.
 
@@ -44,3 +44,9 @@ to the directory containing `config.json`, `model.safetensors`, and tokenizer fi
 - PyTorch/sklearn-ready phishing classifier with a deterministic fallback
 - SQLite persistence and report endpoint
 - Responsive forensic dashboard
+- Earliest observable public-IP selection from the `Received` chain
+- Best-effort IP location, ASN/organization, network-type, VPN/proxy/Tor, and hosting enrichment
+
+IP enrichment uses `https://ipwho.is` with a five-second timeout and an in-process
+cache. Threat analysis still completes if the provider is unavailable. Results are
+explicitly described as infrastructure attribution, not a person's physical location.
